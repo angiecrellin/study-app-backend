@@ -33,6 +33,6 @@ app.get('/cards', (req, res) => {
 })
 
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log('server is listening woohoo')
 });
